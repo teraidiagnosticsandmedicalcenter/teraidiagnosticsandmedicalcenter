@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <!-- Soft gradient background glow -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0f766e" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Protective Medical Circle -->
+  <circle cx="60" cy="60" r="54" fill="#ffffff" stroke="url(#bgGrad)" stroke-width="4" filter="url(#shadow)" />
+  
+  <!-- Embracing Heart Wings (Teal / Cyan) -->
+  <path d="M60 92 C40 76 26 62 26 44 C26 31 36 22 48 22 C54.5 22 60 25.5 60 29 C60 25.5 65.5 22 72 22 C84 22 94 31 94 44 C94 62 80 76 60 92 Z" 
+        fill="#f0fdfa" stroke="#0d9488" stroke-width="3" stroke-linejoin="round" />
+
+  <!-- Medical Red Cross with Round Edges -->
+  <rect x="54" y="36" width="12" height="30" rx="3" fill="url(#crossGrad)" />
+  <rect x="45" y="45" width="30" height="12" rx="3" fill="url(#crossGrad)" />
+
+  <!-- Pulse Line Accent -->
+  <path d="M38 51 L46 51 L49 43 L52 57 L55 51 L82 51" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+</svg>
